@@ -33,7 +33,7 @@ Just set the maximum volume you want (between 0 - silent and 1 - loudest) and pr
 
 ###![Album Info Search button](/Resources/imgSearch.png) Album Info Search
 
-![Album Info Search Screen](/Images/AlbumInfo.jpg)
+![Album Info Search Screen](/Images/AlbumDetails.jpg)
 
 Type in the album artists and title, and press the Search button. The program will search the MusicBrainz database for details of the album tracks. The search results appear in the list.
 
