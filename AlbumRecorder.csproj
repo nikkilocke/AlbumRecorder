@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{313E4B0B-D5BA-4DC5-900D-98EC10C2D19E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AlbumRecorder</RootNamespace>
+    <AssemblyName>AlbumRecorder</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MusicBrainzWebService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MusicBrainzWebService.PCL.1.1.0\lib\portable-net45+win+win81+wpa81+XamriniOS10+monoandroid10+monotouch10\MusicBrainzWebService.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NAudio, Version=1.7.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Downloads\NAudio\NAudio\bin\Debug\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="ParkSquare.Gracenote, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\ParkSquare.Gracenote.1.3.0.0\lib\net40\ParkSquare.Gracenote.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="policy.2.0.taglib-sharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=db62eba44689b5b0, processorArchitecture=MSIL">
+      <HintPath>packages\taglib.2.1.0.0\lib\policy.2.0.taglib-sharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="taglib-sharp, Version=2.1.0.0, Culture=neutral, PublicKeyToken=db62eba44689b5b0, processorArchitecture=MSIL">
+      <HintPath>packages\taglib.2.1.0.0\lib\taglib-sharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlbumDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlbumDetails.Designer.cs">
+      <DependentUpon>AlbumDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlbumInfo.cs" />
+    <Compile Include="ExtractWaveProvider.cs" />
+    <Compile Include="FilteredSampleProvider.cs" />
+    <Compile Include="GapFinder.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Normalize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Normalize.Designer.cs">
+      <DependentUpon>Normalize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recording.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recording.Designer.cs">
+      <DependentUpon>Recording.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Soundex.cs" />
+    <Compile Include="SplitAlbum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplitAlbum.Designer.cs">
+      <DependentUpon>SplitAlbum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskRunner.cs" />
+    <Compile Include="TimeSpanEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimeSpanEdit.Designer.cs">
+      <DependentUpon>TimeSpanEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrackDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrackDetails.Designer.cs">
+      <DependentUpon>TrackDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrackJoin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrackJoin.Designer.cs">
+      <DependentUpon>TrackJoin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UndoAction.cs" />
+    <Compile Include="WaveControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WaveControl.Designer.cs">
+      <DependentUpon>WaveControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AlbumDetails.resx">
+      <DependentUpon>AlbumDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Normalize.resx">
+      <DependentUpon>Normalize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Recording.resx">
+      <DependentUpon>Recording.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplitAlbum.resx">
+      <DependentUpon>SplitAlbum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeSpanEdit.resx">
+      <DependentUpon>TimeSpanEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrackDetails.resx">
+      <DependentUpon>TrackDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrackJoin.resx">
+      <DependentUpon>TrackJoin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaveControl.resx">
+      <DependentUpon>WaveControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Track.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgUnlocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgLocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normalize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgTracks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgRecord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgUndo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgRedo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSaveProject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSplit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgOptions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgCoverMissing.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

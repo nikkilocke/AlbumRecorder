@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AlbumRecorder.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MusicFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="OutputType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.wma</Value>
+    </Setting>
+    <Setting Name="RecordingDevice" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="NormalizeLevel" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="RecordingFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MinTrackLength" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="SilenceFilterCentre" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">3500</Value>
+    </Setting>
+    <Setting Name="SilenceFilterQ" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">0.25</Value>
+    </Setting>
+    <Setting Name="StartSilenceThreshold" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">0.002</Value>
+    </Setting>
+    <Setting Name="EndSilenceThreshold" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">0.003</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
