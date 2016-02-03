@@ -9,7 +9,7 @@
 
 Start the program (from the Start Menu, Task Bar, or by double-clicking on AlbumRecorder.exe), and you will see this screen:
 
-![Startup Screen](/Images/MainScreenBlank.jpg)
+![Startup Screen](/Images/MainFormBlank.jpg)
 
 ###![Record button](/Resources/imgRecord.png) Recording
 
@@ -17,7 +17,7 @@ To record, press the record button ![Record button](/Resources/imgRecord.png), w
 
 ![Recording Screen](/Images/Recording.jpg)
 
-Choose your recording device in the dropdown at the top, cue up your album, and press the Start button. The volume slider adjusts the recording volume (you may need to have a few tries to get this set correctly - ideally the peaks of the recording should nearly, but not quite, reach the edges of the blue area.
+Choose your recording device in the dropdown at the top, cue up your album, and press the Start button. The volume slider adjusts the recording volume (you may need to have a few tries to get this set correctly - ideally the peaks of the recording should nearly, but not quite, reach the edges of the blue area).
 
 When side A is finished, press the Pause button, turn the album over, then press the Pause button again to restart.
 
@@ -33,7 +33,7 @@ Just set the maximum volume you want (between 0 - silent and 1 - loudest) and pr
 
 ###![Album Info Search button](/Resources/imgSearch.png) Album Info Search
 
-![Album Info Search Screen](/Images/Normalize.jpg)
+![Album Info Search Screen](/Images/AlbumInfo.jpg)
 
 Type in the album artists and title, and press the Search button. The program will search the MusicBrainz database for details of the album tracks. The search results appear in the list.
 
@@ -51,7 +51,7 @@ The program uses a BiQuad filter to filter out high and low frequencies, to get 
 
 ###Main track split editing screen
 
-![Main Screen](/Images/MainScreen.jpg)
+![Main Screen](/Images/MainForm.jpg)
 
 Once the album has been split into tracks, the main screen shows the start and end of each track. You can adjust the start and end points by dragging the red cursors, or by altering the values on the right (the little buttons increase or decrease the values by 0.1 sec).
 
@@ -65,7 +65,7 @@ If you right-click anywhere on the music, a pop-up will show you the position (i
 
 ###![Save button](/Resources/imgSave.png) Save button
 
-When you press the Save button, you are first shown the Track Details screen (see below), and then the music is split into tracks and saved to your music folder, in a folder structure My Music\Artis Name\Album Name\Track Name.
+When you press the Save button, you are first shown the Track Details screen (see below), and then the music is split into tracks and saved to your music folder, in a folder structure My Music\Artist Name\Album Name\Track Name.
 
 The details of the tracks split, volume, etc. are also saved into a project file, which you can later open to tweak anything, before resaving the album.
 
@@ -73,7 +73,9 @@ The details of the tracks split, volume, etc. are also saved into a project file
 
 ![Track Details Screen](/Images/TrackDetails.jpg)
 
-Ensure all the fields are filled in correctly before saving. The image at the top left is the album cover - this is found by searching the MusicBrainz and Gracenote databases for the album artist and title. If no album cover is found automatically, you can click on the image to start a search. If nothing is found even then, you can search the Web for a picture, and drag it onto the form.
+Ensure all the fields are filled in correctly before saving. This is important, as Windows Media Player may overwrite the track details with something different if any of the fields is missing.
+
+The image at the top left is the album cover - this is found by searching the MusicBrainz and Gracenote databases for the album artist and title. If no album cover is found automatically, you can click on the image to start a search. If nothing is found even then, you can search the Web for a picture, and drag it onto the form.
 
 ###![Save project button](/Resources/imgSaveProject.png) Save Project button
 
