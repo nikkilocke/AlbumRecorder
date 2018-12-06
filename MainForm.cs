@@ -412,6 +412,7 @@ namespace AlbumRecorder {
 					string dest = Path.Combine(folder, string.Format("{0:00} - {1}", t + 1, filename(name))) + Properties.Settings.Default.OutputType;
 					Status("Saving {0} {1}", t + 1, name);
 					ExtractWaveProvider p = new ExtractWaveProvider(m_Reader, start, trk.LengthSeconds);
+					start += trk.LengthSeconds;
 					switch (Properties.Settings.Default.OutputType) {
 						case ".wma":
 							MediaFoundationEncoder.EncodeToWma(p, dest);
